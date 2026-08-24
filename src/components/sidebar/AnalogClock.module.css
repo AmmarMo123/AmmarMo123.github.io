@@ -1,0 +1,37 @@
+.clock {
+  flex-shrink: 0;
+  overflow: visible;
+}
+
+.face {
+  fill: none;
+  stroke: var(--color-border);
+  stroke-width: 1.5;
+}
+
+.tick {
+  stroke: var(--color-text-faint);
+  stroke-width: 1.5;
+}
+
+.hourHand {
+  stroke: var(--color-text-muted);
+  stroke-width: 3;
+  stroke-linecap: round;
+}
+
+.minuteHand {
+  stroke: var(--color-text-muted);
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.secondHand {
+  stroke: var(--color-text);
+  stroke-width: 1;
+  stroke-linecap: round;
+}
+
+.pivot {
+  fill: var(--color-text);
+}

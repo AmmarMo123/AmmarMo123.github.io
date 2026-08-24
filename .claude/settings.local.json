@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm create *)",
+      "Bash(cp -R /tmp/vite-scaffold-tmp/. .)",
+      "Bash(rm -rf /tmp/vite-scaffold-tmp)",
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "Read(//tmp/**)",
+      "Bash(lsof -ti:5173 -sTCP:LISTEN)",
+      "Bash(xargs -r kill)",
+      "Bash(disown)",
+      "Bash(timeout 30 bash -c 'until curl -sf http://localhost:5173 >/dev/null; do sleep 1; done')",
+      "Bash(command -v chromium-cli)",
+      "Bash(npx --no-install chromium-cli --version)",
+      "Bash(npm ls *)",
+      "Bash(npx --no-install playwright --version)",
+      "Read(//opt/homebrew/lib/node_modules/**)",
+      "Bash(npx playwright *)",
+      "Read(//Applications/**)",
+      "Bash(sw_vers)",
+      "Bash(node /private/tmp/claude-501/-Users-ammarmo-Desktop-Projects-Portfolio/ce86e979-581e-4fac-9ae4-6fe24d3180bf/scratchpad/screenshot.mjs /private/tmp/claude-501/-Users-ammarmo-Desktop-Projects-Portfolio/ce86e979-581e-4fac-9ae4-6fe24d3180bf/scratchpad)",
+      "Bash(node /Users/ammarmo/Desktop/Projects/Portfolio/screenshot.mjs /private/tmp/claude-501/-Users-ammarmo-Desktop-Projects-Portfolio/ce86e979-581e-4fac-9ae4-6fe24d3180bf/scratchpad)",
+      "Bash(node /Users/ammarmo/Desktop/Projects/Portfolio/screenshot2.mjs /private/tmp/claude-501/-Users-ammarmo-Desktop-Projects-Portfolio/ce86e979-581e-4fac-9ae4-6fe24d3180bf/scratchpad)",
+      "Bash(npm uninstall *)"
+    ]
+  }
+}

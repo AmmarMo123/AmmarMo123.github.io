@@ -1,0 +1,33 @@
+.institution {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.degree {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+  margin-top: var(--space-2xs);
+}
+
+.subTitle {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-text-faint);
+  margin-top: var(--space-lg);
+  margin-bottom: var(--space-xs);
+}
+
+.awardsList {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.awardItem {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}

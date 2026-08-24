@@ -1,0 +1,17 @@
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.link {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  color: var(--color-text-muted);
+  transition: color var(--transition-fast);
+  width: fit-content;
+}
+
+.link:hover {
+  color: var(--color-accent);
+}

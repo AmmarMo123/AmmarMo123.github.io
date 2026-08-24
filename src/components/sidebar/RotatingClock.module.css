@@ -1,0 +1,94 @@
+.wrapper {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.fade {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  animation: fadeIn 400ms ease;
+}
+
+.clockRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.weather {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--color-text-muted);
+}
+
+.temp {
+  font-variant-numeric: tabular-nums;
+}
+
+.label {
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-text-faint);
+}
+
+.dots {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.dot {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--color-border);
+}
+
+.dotActive {
+  position: relative;
+  width: 18px;
+  height: 4px;
+  border-radius: 2px;
+  overflow: hidden;
+  background: var(--color-border);
+}
+
+.dotFill {
+  position: absolute;
+  inset: 0;
+  width: 0%;
+  background: var(--color-text-muted);
+  animation-name: dotFill;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes dotFill {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(2px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

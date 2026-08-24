@@ -1,0 +1,45 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.name {
+  font-family: var(--font-sans);
+  font-weight: 700;
+  font-size: 2.1rem;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+  margin-bottom: var(--space-md);
+}
+
+.bio {
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  line-height: 1.5;
+  max-width: 32ch;
+  margin-bottom: var(--space-2xl);
+}
+
+.section {
+  margin-bottom: var(--space-2xl);
+}
+
+.sectionTitle {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-text-faint);
+  margin-bottom: var(--space-sm);
+}
+
+.contact {
+  margin-top: auto;
+  padding-top: var(--space-lg);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--space-lg);
+}
