@@ -37,7 +37,6 @@
   }
 
   .sidebar {
-    position: relative;
     min-height: 100dvh;
     justify-content: center;
   }
