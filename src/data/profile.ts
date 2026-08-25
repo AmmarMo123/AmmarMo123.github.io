@@ -6,15 +6,23 @@ export const profile: Profile = {
   education: {
     institution: 'York University',
     degree: 'Honours Bachelor of Science, Computer Science',
-    awards: [
-      "3x Dean's Honour Roll",
-      'Global Leader Award',
-      'Lassonde Scholarship',
-      'Lassonde Research Award',
+    achievements: [
+      { category: 'Academia', value: "3x Dean's Honour Roll" },
+      { category: 'Awards', value: '$120,000+ in scholarships' },
+      {
+        category: 'Research',
+        value: '2nd best presentation - Lassonde Conference 2024',
+        link: 'https://www.yorku.ca/yfile/2023/10/06/lassonde-undergrads-awarded-for-sdg-projects/',
+      },
+      {
+        category: 'Hackathon',
+        value: 'Hack the North 2024 winner',
+        link: 'https://devpost.com/software/dafp',
+      },
+      { category: 'Capstone', value: 'Innovation Award 2024 - YSpace' },
     ],
   },
   contact: {
-    phone: '647-621-8513',
     email: 'ammarrmoo@gmail.com',
     linkedin: 'https://linkedin.com/in/ammarmo',
     github: 'https://github.com/ammarmo123',

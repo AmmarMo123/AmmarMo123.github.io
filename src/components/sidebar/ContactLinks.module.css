@@ -1,17 +1,16 @@
 .list {
   display: flex;
-  flex-direction: column;
-  gap: var(--space-xs);
+  flex-direction: row;
+  align-items: center;
+  gap: var(--space-md);
 }
 
-.link {
-  font-family: var(--font-mono);
-  font-size: 0.76rem;
+.icon {
+  display: flex;
   color: var(--color-text-muted);
   transition: color var(--transition-fast);
-  width: fit-content;
 }
 
-.link:hover {
+.icon:hover {
   color: var(--color-accent);
 }

@@ -11,12 +11,22 @@ interface SidebarProps {
 export function Sidebar({ profile }: SidebarProps) {
   return (
     <div className={styles.root}>
-      <div>
+      <div className={styles.top}>
         <h1 className={styles.name}>{profile.name}</h1>
         <p className={styles.bio}>{profile.bio}</p>
         <EducationSection education={profile.education} />
       </div>
       <div className={styles.contact}>
+        <figure className={styles.gifBlock}>
+          <img
+            className={styles.gif}
+            src="sidebar/this-is-fine.gif"
+            alt="This is fine"
+          />
+          <figcaption className={styles.gifCaption}>
+            My favorite meme — encapsulates how I handle chaos some days.
+          </figcaption>
+        </figure>
         <ContactLinks contact={profile.contact} />
         {/* <RotatingClock /> */}
       </div>

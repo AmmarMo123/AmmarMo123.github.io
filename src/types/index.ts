@@ -37,14 +37,19 @@ export interface ExperienceEntry {
   publication?: Publication;
 }
 
+export interface Achievement {
+  category: string;
+  value: string;
+  link?: string;
+}
+
 export interface Education {
   institution: string;
   degree: string;
-  awards: string[];
+  achievements: Achievement[];
 }
 
 export interface ContactInfo {
-  phone: string;
   email: string;
   linkedin: string;
   github: string;
