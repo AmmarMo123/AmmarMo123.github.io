@@ -32,7 +32,7 @@ export function AchievementsRotator({ achievements }: AchievementsRotatorProps) 
 
   return (
     <div className={styles.wrapper}>
-      <p key={current.category} className={styles.line}>
+      <p key={index} className={styles.line}>
         <span className={styles.category}>{current.category}</span>
         {current.link ? (
           <a
@@ -56,16 +56,16 @@ export function AchievementsRotator({ achievements }: AchievementsRotatorProps) 
           ‹
         </button>
         <div className={styles.dots}>
-          {achievements.map((achievement, i) =>
+          {achievements.map((_, i) =>
             i === index ? (
-              <span key={`${achievement.category}-${index}`} className={styles.dotActive}>
+              <span key={i} className={styles.dotActive}>
                 <span
                   className={styles.dotFill}
                   style={{ animationDuration: `${SWAP_INTERVAL_MS}ms` }}
                 />
               </span>
             ) : (
-              <span key={achievement.category} className={styles.dot} />
+              <span key={i} className={styles.dot} />
             ),
           )}
         </div>

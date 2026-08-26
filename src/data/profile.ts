@@ -20,6 +20,7 @@ export const profile: Profile = {
         link: 'https://devpost.com/software/dafp',
       },
       { category: 'Capstone', value: 'Innovation Award 2024 - YSpace' },
+      { category: 'Club', value: 'Vice President @CSHub 2024/25' },
     ],
   },
   contact: {
