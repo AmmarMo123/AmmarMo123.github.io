@@ -7,8 +7,12 @@ export const experience: ExperienceEntry[] = [
     role: 'ASIC Systems Engineer Intern',
     dateRange: 'May 2025 – Aug 2026',
     location: 'Markham, ON',
-    reflection:
-      "Most of my time at AMD has lived in the space between hardware and software — writing Python infrastructure to model ASIC registers so the validation team could stop hand-writing test cases and start generating them. I ended up owning the reusable API layer that 50+ automated hardware tests were eventually built on, but the more interesting work was cross-functional: chasing IP failures that spanned Design, Firmware, and Validation, where the bug was rarely where it first appeared, and landing 15+ fixes across client and server projects. I also had a hand in end-to-end silicon bring-up of a high-speed chiplet interconnect, watching a spec on paper turn into an actual link-up on the bench ahead of schedule. Leaning on GenAI tools for framework scaffolding and failure triage cut a lot of the repetitive debugging time, which freed up more of my time for the parts that actually needed judgment.",
+    reflection: [
+      'I worked on automation, bringups, and hardware debugs across several AMD products, including next-generation Ryzen, EPYC, and MI450.',
+      "A big part of my work was improving my team's internal automation infrastructure. The team was moving away from manually running tests through internal GUI tools toward a Python-based framework with reusable, project-agnostic abstractions. I contributed to this infrastructure, added support for new hardware access methods and firmware features, and helped build an internal dashboard using Python, React, and Electron. We also introduced Jenkins and CI/CD to automate register data generation, turning processes that once took multiple days into ones that could run in around 30 minutes.",
+      "Alongside this work, I gradually took on more responsibility with hardware bringups and debugging. I started by supporting the bringup of a brand-new high-speed interconnect IP (UCIe) on MI450, helping with its preparation, automation, and initial validation. As I gained experience, I began taking ownership of more of the bringup and debug process. By my third bringup, I was able to independently own and lead the bringup of an IP on next-generation Desktop Ryzen CPUs, driving the work to enable key features ahead of program milestones and leading a high-priority debug. I learned how to debug within the constraints of real silicon and collaborate closely with Hardware, Firmware, and Validation teams to root cause issues and find solutions.",
+      "Seeing how much more efficient the team became through the automation work really changed the way I think about engineering. It made me appreciate that you can have a lot of impact not just by solving the problem in front of you, but by improving the tools and processes around it. This is something I'll definitely carry with me in all my future work.",
+    ],
   },
   {
     id: 'yorku-ta',
@@ -16,8 +20,10 @@ export const experience: ExperienceEntry[] = [
     role: 'Teaching Assistant, Supplemental Instructor',
     dateRange: 'Sep 2024 – Dec 2025',
     location: 'Toronto, ON',
-    reflection:
-      "Teaching ended up teaching me more about systems than most of my own coursework did. Across Embedded Systems, Software Tools, Digital Logic Design, and Discrete Math, I kept relearning the same lesson: if I couldn't explain memory management, a state machine, or a proof simply enough for a student who'd never seen it before, I probably didn't understand it as well as I thought I did. Supplemental instruction is a different kind of rigor than being graded yourself — it rewards clarity over cleverness, and it's humbling in a good way.",
+    reflection: [
+      'I was a TA for three courses (Software Tools, Embedded Systems, and Digital Design) and a Supplemental Instructor for Discrete Mathematics. My favourite part was working directly with students, whether it was helping them through labs or sitting down with them during office hours to work through a problem.',
+      'I genuinely love teaching and interacting with people. Everyone approaches problems differently, and teaching taught me to listen, adapt how I explain things, and appreciate different ways of thinking. More than anything, it showed me how much I enjoy working with people, helping them understand something, and learning from them along the way.',
+    ],
   },
   {
     id: 'evertz',
@@ -25,8 +31,12 @@ export const experience: ExperienceEntry[] = [
     role: 'FPGA Design Engineer Intern',
     dateRange: 'Sep 2023 – Jul 2024',
     location: 'Burlington, ON',
-    reflection:
-      "At Evertz I worked at the boundary between a microprocessor and an FPGA — writing OOP-based C++ APIs that configured and extended features over registers. The constraint that stuck with me was scarcity: FPGA resources are finite in a way server-side software rarely forces you to reckon with, so optimizing data structures to cut physical resource usage by up to 50% on some features felt like real engineering rather than premature optimization. I also spent time integrating third-party C++ libraries for visualizing FPGA data, which meant caring as much about rendering accuracy as about the underlying logic driving it.",
+    reflection: [
+      "I worked on both hardware and software, writing VHDL for digital circuits and C++ APIs for Evertz's AV products.",
+      'This was my first real exposure to hardware, and it completely changed the way I thought about solving problems. I had to start thinking in terms of clocks, parallel logic, limited resources, and the trade-offs between timing and space. I also learned how to use ILAs, set up useful triggers, inspect signals, and debug issues directly in the hardware. It was a very different mindset from software, but that was something I really enjoyed learning.',
+      'I also had the opportunity to do a lot of C++ work, contributing to our hardware API infrastructure and learning how the software interacted with and controlled the underlying FPGA hardware. One of the things I enjoyed most was being able to use that infrastructure to improve and optimize features on the FPGA itself. I liked seeing how changes on one side could affect the other and understanding the full picture.',
+      'I learned a huge amount from my manager and the people I worked with. I became more comfortable with version control, debugging, and working within a larger codebase. Overall, this role pushed me to think differently and helped me grow tremendously as an engineer.',
+    ],
   },
   {
     id: 'ngwn',
@@ -34,13 +44,18 @@ export const experience: ExperienceEntry[] = [
     role: 'Research Intern',
     dateRange: 'May 2023 – Aug 2023',
     location: 'Toronto, ON',
-    reflection:
-      "This was the first time I worked on a problem with no existing solution to reference — just a Postdoctoral fellow, a professor, and a genuinely non-convex optimization problem in spectrum partitioning and power allocation. We leaned on fractional programming and Dinkelbach's algorithm to make it tractable, and I built the MATLAB simulations that turned the math into numbers we could actually trust. Seeing it through to a published paper was a different kind of satisfying than shipping code — slower, but more permanent.",
+    reflection: [
+      'My research experience gave me a firsthand look at the journey from an idea to a peer-reviewed publication. I spent a significant amount of time reading papers and conducting literature reviews to understand existing work in sensing and communication systems. From there, our team identified a research gap around resource allocation and developed a novel approach for efficiently allocating spectrum and power between sensing and communication.',
+      'I helped develop the solution and was responsible for writing the simulations, running experiments, and analysing the results. We then wrote our paper, and submitted it for publication with IEEE. The paper went through two rounds of feedback and revisions before eventually being published.',
+      'This experience also gave me a new appreciation for mathematics and its ability to model real-world systems. Being able to represent complex sensing and communication systems mathematically, optimize how limited resources are allocated, and use those models to uncover meaningful insights was something I found genuinely fascinating.',
+      'Check out the paper here:',
+    ],
     publication: {
       title:
         'Joint Spectrum Partitioning and Power Allocation for Energy Efficient Semi-Integrated Sensing and Communications',
       authors: 'Ammar Mohamed A, Sylvester Aboagye, Hina Tabassum',
       venue: 'IEEE Communications Letters, 2024',
+      link: 'https://ieeexplore.ieee.org/document/10516428',
     },
   },
 ];

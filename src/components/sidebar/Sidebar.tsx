@@ -24,7 +24,7 @@ export function Sidebar({ profile }: SidebarProps) {
             alt="This is fine"
           />
           <figcaption className={styles.gifCaption}>
-            My favorite meme — encapsulates how I handle chaos some days.
+            This is my favourite meme, would love to hear what yours is
           </figcaption>
         </figure>
         <ContactLinks contact={profile.contact} />

@@ -33,7 +33,7 @@ export interface ExperienceEntry {
   role: string;
   dateRange: string;
   location: string;
-  reflection: string;
+  reflection: string[];
   publication?: Publication;
 }
 

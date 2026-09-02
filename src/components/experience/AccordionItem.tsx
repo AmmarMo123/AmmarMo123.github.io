@@ -45,12 +45,25 @@ export function AccordionItem({ entry }: AccordionItemProps) {
       >
         <div className={styles.contentInner}>
           <div className={styles.reflection}>
-            <p>{entry.reflection}</p>
+            {entry.reflection.map((paragraph) => (
+              <p key={paragraph}>{paragraph}</p>
+            ))}
             {entry.publication && (
               <p className={styles.publication}>
-                <span className={styles.publicationTitle}>
-                  "{entry.publication.title}"
-                </span>
+                {entry.publication.link ? (
+                  <a
+                    className={styles.publicationTitle}
+                    href={entry.publication.link}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    "{entry.publication.title}"
+                  </a>
+                ) : (
+                  <span className={styles.publicationTitle}>
+                    "{entry.publication.title}"
+                  </span>
+                )}
                 <br />
                 {entry.publication.authors} — {entry.publication.venue}
               </p>
